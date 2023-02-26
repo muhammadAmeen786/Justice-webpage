@@ -21,11 +21,23 @@
     />
 
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="input.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }   
+          }
+        }
+      }
+    </script>
 
     <title>Document</title>
   </head>
-  <body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+  <body class="">
     <div class="bg-neutral-600">
       <section aria-label="">
         <nav class="h-14 bg-neutral-600 flex items-center ">
@@ -49,14 +61,19 @@
       </section>
       <!-- Hero Section -->
       <section aria-label="hero">
-        <div class="flex pl-20 ">
-          <h1 class="w-[34rem] h-80 text-6xl pt-20 text-gray-200 font-[1000]">Your Justice Is Our Top Priority.</h1>
+        <div class="flex pl-20 h-[10rem] ">
+          <h1 class="w-[34rem] h-70 text-6xl pt-20 text-gray-200 font-[1000]">Your Justice Is Our Top Priority.</h1>
           <p class="w-[33rem] pt-[7rem] text-[13px] text-gray-300">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
             odio assumenda et quo maxime iure, repellat sit ipsa error placeat
             eligendi quas laudantium obcaecati, facilis illum sequi? Nihil,
             excepturi harum.
           </p>
+        </div>
+        <!--url('https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')-->
+        <div >
+          <img src="https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="justice-pic" class="h-[30rem] w-[100vw] -z-10 pt-[8rem] border-cyan-200">
+  
         </div>
       </section>
     </div>
